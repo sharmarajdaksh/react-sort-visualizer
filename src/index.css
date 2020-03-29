@@ -1,3 +1,7 @@
+* {
+	user-select: none;
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -12,28 +16,69 @@ code {
 		monospace;
 }
 
+.navbar {
+	box-sizing: border-box;
+	height: 100px;
+	font-size: 35px;
+	font-weight: bolder;
+	padding: 1%;
+	position: absolute;
+	transition: text-shadow 0.2s;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	-ms-transition: text-shadow 0.2s;
+	-o-transition: text-shadow 0.2s;
+}
+
+.navbar:hover {
+	text-shadow: #ccc 5px 5px 5px;
+}
+
 .main {
+	box-sizing: border-box;
 	background-color: #eee;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.btn {
+	box-sizing: border-box;
+	color: white;
+	background-color: black;
+	padding: 1%;
+	font-size: 25px;
+	cursor: pointer;
+	width: 90%;
+	padding: 20px 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .element-list {
 	margin: auto;
-	height: 100vh;
 	width: 100%;
 	max-width: 600px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .element {
-	margin: 10px auto;
-	padding: 10px 20px;
+	font-size: 25px;
+	box-sizing: border-box;
+	margin: 20px auto;
+	padding: 20px 20px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 90%;
-	height: 50px;
+	width: 100%;
 	background-color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
